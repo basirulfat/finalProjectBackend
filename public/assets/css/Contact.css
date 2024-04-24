@@ -1,0 +1,296 @@
+#contact-container {
+  margin-top: 10em;
+  width: 100%;
+  display: flex;
+}
+p a {
+  color: var(--blue);
+}
+p a:hover {
+  text-decoration: underline;
+  color: var(--blue);
+}
+#contact-container #left-container {
+  padding: 1.5em;
+  width: 60%;
+}
+#contact-container #left-container #contact-form p {
+  font-size: 1.4em;
+  font-family: var(--body-font);
+}
+#contact-container #left-container #general-container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0em auto;
+}
+
+#contact-container #left-container #contact-form .field-container label {
+  display: block;
+  margin-top: 0.8em;
+  padding-bottom: 0.2em;
+}
+#contact-container #left-container #contact-form .field-container input,
+select {
+  border: 1px solid gray;
+  background: var(--background);
+  outline: var(--outline);
+  border-radius: 0.3em;
+  padding: 0.7em;
+  margin-bottom: 0.3em;
+  width: 25vw;
+}
+#contact-container #left-container #contact-form #general-container1 {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#contact-container
+  #left-container
+  #contact-form
+  #general-container1
+  .field-container1
+  label {
+  display: block;
+}
+#contact-container
+  #left-container
+  #contact-form
+  #general-container1
+  .field-container1
+  input,
+textarea {
+  border: 1px solid gray;
+  background: var(--background);
+  outline: var(--outline);
+  border-radius: 0.3em;
+  padding: 0.7em;
+  margin-bottom: 0.3em;
+  width: 53vw;
+}
+#contact-container
+  #left-container
+  #contact-form
+  #general-container
+  .field-container
+  input:focus {
+  border: 1px solid #1e90ff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+#contact-container
+  #left-container
+  #contact-form
+  #general-container
+  .field-container
+  select:focus {
+  border: 1px solid #1e90ff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+#contact-container
+  #left-container
+  #contact-form
+  #general-container1
+  .field-container1
+  input:focus {
+  border: 1px solid #1e90ff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+#contact-container
+  #left-container
+  #contact-form
+  #general-container1
+  .field-container1
+  textarea:focus {
+  border: 1px solid #1e90ff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+#contact-container #left-container #contact-form #submit-btn {
+  border: var(--border);
+  outline: var(--outline);
+  border-radius: 30px;
+  background-color: #2ed573;
+  width: 8em;
+  padding: 0.7em 1.3em;
+  margin-left: 2.3em;
+  margin-bottom: 2em;
+  color: white;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+#contact-container #left-container #contact-company {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/pic1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#contact-container #left-container #contact-company .contact-image {
+  text-align: center;
+  height: 20vh;
+}
+#contact-container #left-container #contact-company .contact-image {
+  padding: 1em 0em;
+  color: #fff;
+}
+#contact-container #left-container #contact-company .contact-image p,
+button {
+  padding: 0.5em 0em;
+}
+#contact-container #left-container #contact-company .contact-image .com-btn {
+  border-radius: 30px;
+  background-color: var(--success);
+  width: 8em;
+  padding: 0.7em 1.3em;
+  color: var(--light);
+  font-size: 0.9em;
+  display: inline-block;
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+#contact-container #left-container #contact-company .contact-image .job-btn {
+  border: 1px solid var(--light);
+  padding: 0.5em 1.3em;
+  color: var(--light);
+  border-radius: 30px;
+  display: inline-block;
+  margin-top: 0.1rem;
+  cursor: pointer;
+}
+#contact-container
+  #left-container
+  #contact-company
+  .contact-image
+  .job-btn:hover {
+  color: var(--light);
+  background-color: var(--success);
+  border: var(--border);
+}
+
+#contact-container #right-container {
+  width: 40%;
+  background-color: rgb(244, 244, 244);
+  padding: 2em;
+  margin-bottom: 1.3em;
+}
+#contact-container #right-container address,
+#main-section #right-section time {
+  font-size: 1em;
+  font-style: normal;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+#contact-container #right-container #follow {
+  margin-top: 2em;
+}
+#contact-container #right-container .social-link {
+  width: 25%;
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+#contact-container #right-container .social-link a {
+  font-size: 1.3em;
+  color: var(--gray);
+}
+#contact-container #right-container .about-btn {
+  border: var(--border);
+  outline: var(--outline);
+  border-radius: 30px;
+  background-color: var(--blue);
+  width: 8em;
+  padding: 0.7em 1.3em;
+  margin: 9em 11em;
+  color: var(--light);
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  #contact-container {
+    flex-direction: column;
+  }
+
+  #contact-container #left-container,
+  #contact-container #right-container {
+    width: 100%;
+    padding: 1em;
+  }
+  #contact-container #left-container #contact-form .field-container1 {
+    width: 100%;
+  }
+
+  #contact-container #left-container #contact-form .field-container input,
+  #contact-container #left-container #contact-form .field-container select,
+  #contact-container
+    #left-container
+    #contact-form
+    #general-container1
+    .field-container1
+    input,
+  #contact-container
+    #left-container
+    #contact-form
+    #general-container1
+    .field-container1
+    textarea {
+    width: 100%;
+  }
+  #contact-container #left-container #contact-company {
+    padding: 1em 0em;
+  }
+  #contact-container #left-container #contact-form button,
+  #contact-container #left-container #contact-company .contact-image #com-btn,
+  #contact-container #left-container #contact-company .contact-image #job-btn,
+  #contact-container #right-container #about-btn {
+    margin: 1em auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #contact-container #left-container #contact-form .field-container,
+  #contact-container
+    #left-container
+    #contact-form
+    #general-container1
+    .field-container1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #contact-container #left-container #contact-form .field-container1 {
+    width: 100%;
+  }
+  #contact-container #left-container #contact-form #submit-btn {
+    margin-left: 0.5em;
+  }
+  #contact-container #left-container #contact-form .field-container input,
+  #contact-container #left-container #contact-form .field-container select,
+  #contact-container
+    #left-container
+    #contact-form
+    #general-container1
+    .field-container1
+    input,
+  #contact-container
+    #left-container
+    #contact-form
+    #general-container1
+    .field-container1
+    textarea {
+    width: 100%;
+    margin-left: 0em;
+  }
+  #contact-container #left-container #contact-form button,
+  #contact-container #left-container #contact-company .contact-image #com-btn,
+  #contact-container #left-container #contact-company .contact-image #job-btn,
+  #contact-container #right-container #about-btn {
+    margin: 0.1em auto;
+  }
+}

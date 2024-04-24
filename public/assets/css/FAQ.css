@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  background: #fff;
+  color: #4d5974;
+}
+.faq__heading {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/faqhead.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.faq__heading h1 {
+  color: var(--light);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: var(--body-font);
+}
+.faq__heading h4 {
+  color: var(--light);
+  font-size: var(--h3-font-size);
+  text-transform: uppercase;
+  font-family: var(--body-font);
+  word-spacing: 0.5rem;
+  letter-spacing: 0.5rem;
+  margin: 1rem 0;
+}
+@media only screen and (max-width: 570px) {
+  .faq__heading {
+    text-align: center;
+  }
+}
+/* ================ faq question =============== */
+.faq-container {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+  position: relative;
+  bottom: 3rem;
+  background-color: var(--low-gray);
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid var(--gray);
+}
+
+.accordion .accordion-item button[aria-expanded="true"] {
+  border-bottom: 1px solid var(--blue);
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded="true"] {
+  color: var(--blue);
+}
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}

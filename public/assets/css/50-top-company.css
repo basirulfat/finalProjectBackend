@@ -1,0 +1,199 @@
+/* ===================Small navebar=============== */
+#small-navebar {
+  position: sticky;
+  top: 5.5em;
+  z-index: 1;
+  background-color: var(--light-gray);
+  margin-top: 5.5em;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+#small-navebar ul {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  /* margin-left: 4rem; */
+}
+#small-navebar ul li a {
+  color: var(--gray);
+  font-family: var(--body-font);
+  margin-left: 1rem;
+  padding: 0.9rem;
+}
+#small-navebar ul li a:hover {
+  color: var(--blue);
+  border-bottom: 3px solid var(--blue);
+}
+/* Active company */
+#active-company {
+  width: 100%;
+  height: auto;
+  background-color: #e8f9f9;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  /* margin-top: 5em; */
+}
+#active-company #top-class .two-button {
+  padding-top: 2em;
+}
+#active-company #top-class .two-button button {
+  color: var(--light);
+  background-color: var(--blue);
+  padding: 0.6em 1.5em;
+  margin-right: 1em;
+  border-radius: 20px;
+}
+#active-company #top-class .two-button a {
+  border: 1px solid var(--blue);
+  background-color: var(--light);
+  border-radius: 30px;
+  color: var(--blue);
+  padding: 0.5rem 0.5rem;
+  margin-left: 1rem;
+  font-family: var(--body-font);
+}
+#active-company #top-class .two-button a:hover {
+  background-color: var(--blue);
+  color: var(--light);
+}
+#active-company img {
+  width: 250px;
+  height: 150px;
+}
+/* =========Active company ended=========*/
+
+#mutiple-cards-section {
+  width: 100%;
+  background-color: var(--first-color--lighten);
+}
+.company-card {
+  width: 90%;
+  margin: 1.5em auto;
+  padding: 1em;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+#section-image-and-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#section-image-and-button button {
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  margin-right: 0.5em;
+}
+#section-image-and-button img {
+  width: 60px;
+  height: 60px;
+}
+#mutiple-cards-section span,
+.mul-i {
+  color: #26de81;
+  padding-right: 0.4em;
+  position: relative;
+}
+#mutiple-cards-section p {
+  padding-left: 4em;
+}
+/* ended */
+
+/*========== Rate Company employers============ */
+#Rate-your-Employer {
+  width: 90%;
+  margin: 1.5em auto;
+  padding: 1em;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+#Rate-your-Employer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Rate-your-Employer div h5,
+img {
+  margin-right: 1em;
+}
+#Rate-your-Employer img {
+  width: 100px;
+  height: 80px;
+}
+
+/* ============ Rating part========== */
+.rate-wrapper {
+  width: 60%;
+  height: 70vh;
+  visibility: scroll;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem auto;
+  border-radius: 3px;
+  padding: 1rem;
+  position: fixed;
+  top: 120px;
+  left: 250px;
+  z-index: 2;
+  background-color: var(--light);
+}
+.hide {
+  display: none;
+}
+.rate-wrapper #rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid var(--light-gray);
+}
+.rate-wrapper #rating h3 {
+  margin-bottom: 1rem;
+}
+.rate-wrapper #rating .escape-btn {
+  font-size: 1.3rem;
+  color: var(--gray);
+}
+.rate-wrapper #rating-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 0;
+}
+.rate-wrapper #rating-details .rate-image {
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/company\ logo/rating.jpg");
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.rate-wrapper .work-experiance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.rate-wrapper .work-experiance .Add-experiance {
+  color: var(--light);
+  background-color: var(--blue);
+  border-radius: 30px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.rate-wrapper .work-experiance .not-experience {
+  color: var(--gray);
+}
+.rate-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  background-color: rgba(0, 0, 0, 0.4);
+}

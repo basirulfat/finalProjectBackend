@@ -1,0 +1,57 @@
+#heading {
+  width: 100%;
+  border: 1px solid red;
+  height: 40vh;
+}
+#heading-1 {
+  width: 90%;
+  height: 80vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  margin: 5em auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/1-7.webp);
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+}
+#heading-1 h1 {
+  color: white;
+  text-align: right;
+  padding-top: 15em;
+  padding-right: 2em;
+}
+#content {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+#content p {
+  font-size: larger;
+  margin: 1em 0;
+}
+#content p,
+h2 {
+  text-align: right;
+  padding: 0 2em;
+  align-items: center;
+}
+#content img {
+  width: 100%;
+  margin: 1em auto;
+  height: 100vh;
+}
+
+#content ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#content ul li {
+  list-style-position: inside;
+  list-style-type: none;
+  text-align: right;
+  padding-right: 2em;
+}
